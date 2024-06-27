@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -62,10 +63,10 @@ html {
 }
 
 #img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  height: 100%;
+  margin: auto;
+  width: 80%;
+  max-width: 300px;
+  height: auto;
 }
 
 #img:hover {
@@ -143,15 +144,14 @@ footer > a:hover {
   background-color: #2c3e50;
   color: white;
   border-radius: 20px;
-  width: 300px;
+  width: 80%;
+  max-width: 300px;
   margin: 10px;
+  padding: 20px;
 }
 
 .contact > button {
   margin-top: 5px;
-}
-
-.contact > button {
   padding: 5px 10px;
   font-size: 14px;
   text-align: center;
@@ -226,7 +226,7 @@ footer > a:hover {
   align-items: center;
   flex-direction: column;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 1100px;
+  max-width: 90%;
   margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
@@ -236,7 +236,8 @@ footer > a:hover {
 
 .chess-screenshot {
   width: 100%;
-  max-width: 800px;
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
