@@ -11,7 +11,7 @@ html {
 .hero {
   height: 100vh;
   background-image: url(https://www.tabnine.com/blog/wp-content/uploads/2021/10/visual-studio-2.jpeg);
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   display: flex;
   flex-direction: column;
