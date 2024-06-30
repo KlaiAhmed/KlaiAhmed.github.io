@@ -1,1 +1,274 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(https://www.tabnine.com/blog/wp-content/uploads/2021/10/visual-studio-2.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3c1e88;
+  z-index: 99;
+  padding: 10px;
+}
+
+.nav > img {
+  height: 50px;
+  border-radius: 13px;
+  margin: 10px;
+  transition: transform 0.25s ease-in-out;
+}
+
+.nav > img:hover {
+  transform: scale(1.65);
+}
+
+.aboutme {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#img {
+  margin: auto;
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+}
+
+#img:hover {
+  transform: scale(1.05);
+}
+
+.links > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.links > a:hover {
+  background-color: #ff00aa;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  color: #3498db;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#h2::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #3498db;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+
+footer > a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #ecf0f1;
+  background-color: #2c3e50;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: color 0.3s ease-in-out;
+}
+
+footer > a:hover {
+  color: #2980b9;
+}
+
+#contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 300px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.contact > button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #3498db;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.contact > button:hover {
+  color: #3498db;
+  background-color: #ffffff;
+}
+
+.contact1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.link > a {
+  text-decoration: none;
+  color: #54457a;
+  font-size: 1.2em;
+  padding: 10px 14px;
+  margin: 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.link > a:hover {
+  background-color: #ff00aa;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#linkedin {
+  width: 55px;
+  height: 9vh;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+#linkedin:hover {
+  transform: scale(1.05);
+}
+
+#git {
+  width: 90px;
+  height: 10vh;
+  margin-left: 18px;
+  border-radius: 10px;
+}
+
+#git:hover {
+  transform: scale(1.05);
+}
+
+.project-container {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.chess-screenshot {
+  width: 100%;
+  max-width: 60%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.project-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-link {
+  text-decoration: none;
+  color: #3c1e88;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.button-link:hover {
+  background-color: #ff00aa;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.calculator-screenshot {
+  width: 300px;
+  height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
 
